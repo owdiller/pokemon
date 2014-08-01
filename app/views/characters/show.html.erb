@@ -1,0 +1,14 @@
+<h1> <%= @character.name %>
+<h2>Pokemon #<%= @character.id %></h2>
+
+<div>
+  <strong>Name</strong>:<br />
+  <p><%= @character.name %></p>
+</div>
+<div>
+  <strong>Img</strong>:<br />
+  <p><img src='<%= @character.img %>' height='300px' width='300px'></p>
+</div>
+
+<a href="/characters/<%= @character.id %>/edit">Edit</a> |
+<a href="/characters/<%= @character.id %>/destroy">Destroy</a>

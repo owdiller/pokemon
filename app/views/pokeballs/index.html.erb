@@ -1,0 +1,29 @@
+<h1>Pokeballs</h1>
+
+<p><a href="/new_pokeball">Add a New Pokeball</a></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Trainer</th>
+      <th>Pokemon</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+  <% @pokeballs.each do |pokeball| %>
+    <tr>
+      <td><%= pokeball.trainer.name %></td>
+      <td><%= pokeball.character.name %></td>
+          <td><a href="/pokeballs/<%= pokeball.id %>">Show</a>
+        </td>
+      <td><a href="/pokeballs/<%= pokeball.id %>/edit">Edit</a></td>
+      <td><a href="/pokeballs/<%= pokeball.id %>/destroy">Destroy</a></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+

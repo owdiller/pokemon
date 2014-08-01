@@ -1,0 +1,13 @@
+<h1>Pokemontype #<%= @pokemontype.id %></h1>
+
+<div>
+  <strong>Pokemon</strong>:<br />
+  <p><%= @pokemontype.character.name%></p>
+</div>
+<div>
+  <strong>Type</strong>:<br />
+  <p><%= @pokemontype.type.name %></p>
+</div>
+
+<a href="/pokemontypes/<%= @pokemontype.id %>/edit">Edit</a> |
+<a href="/pokemontypes/<%= @pokemontype.id %>/destroy">Destroy</a>

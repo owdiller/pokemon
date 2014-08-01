@@ -1,0 +1,17 @@
+<h1>Type #<%= @type.id %></h1>
+
+<div>
+  <strong>Name</strong>:<br />
+  <p><%= @type.name %></p>
+</div>
+<div>
+  <strong>Image</strong>:<br />
+  <p><img src="<%= @type.img %>"></p>
+</div>
+<div>
+  <strong>Type</strong>:<br />
+  <p><%= @type.type_id %></p>
+</div>
+
+<a href="/types/<%= @type.id %>/edit">Edit</a> |
+<a href="/types/<%= @type.id %>/destroy">Destroy</a>

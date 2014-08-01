@@ -1,0 +1,31 @@
+<h1>Trainers</h1>
+
+<p><a href="/new_trainer">Add a New Trainer</a></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Img</th>
+      <th>Trainer</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+  <% @trainers.each do |trainer| %>
+    <tr>
+          <td><%= trainer.name %></td>
+          <td><img src="<%= trainer.img %>"></td>
+          <td><%= trainer.trainer_id %></td>
+          <td><a href="/trainers/<%= trainer.id %>">Show</a>
+        </td>
+      <td><a href="/trainers/<%= trainer.id %>/edit">Edit</a></td>
+      <td><a href="/trainers/<%= trainer.id %>/destroy">Destroy</a></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+

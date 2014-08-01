@@ -1,0 +1,21 @@
+<h1>Editing Type #<%= @type.id %></h1>
+
+<form action="/types/<%= @type.id %>/update">
+  <div>
+    <label for="name">name</label><br />
+    <input id="name" name="name" value="<%= @type.name  %>" type="text" />
+  </div>
+  <div>
+    <label for="img">img</label><br />
+    <input id="img" name="img" value="<%= @type.img  %>" type="text" />
+  </div>
+  <div>
+    <label for="type_id">type_id</label><br />
+    <input id="type_id" name="type_id" value="<%= @type.type_id  %>" type="text" />
+  </div>
+  <div>
+    <input type="submit">
+  </div>
+</form>
+
+

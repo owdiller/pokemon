@@ -1,0 +1,29 @@
+<h1>Pokemontypes</h1>
+
+<p><a href="/new_pokemontype">Add a New Pokemontype</a></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Pokemon</th>
+      <th>Type</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+  <% @pokemontypes.each do |pokemontype| %>
+    <tr>
+      <td><%= pokemontype.character.name %></td>
+      <td><%= pokemontype.type.name %></td>
+          <td><a href="/pokemontypes/<%= pokemontype.id %>">Show</a>
+        </td>
+      <td><a href="/pokemontypes/<%= pokemontype.id %>/edit">Edit</a></td>
+      <td><a href="/pokemontypes/<%= pokemontype.id %>/destroy">Destroy</a></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+

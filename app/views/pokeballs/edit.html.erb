@@ -1,0 +1,17 @@
+<h1>Editing Pokeball #<%= @pokeball.id %></h1>
+
+<form action="/pokeballs/<%= @pokeball.id %>/update">
+  <div>
+    <label for="trainer_id">trainer_id</label><br />
+    <input id="trainer_id" name="trainer_id" value="<%= @pokeball.trainer_id  %>" type="text" />
+  </div>
+  <div>
+    <label for="character_id">pokemon_id</label><br />
+    <input id="character_id" name="character_id" value="<%= @pokeball.character_id  %>" type="text" />
+  </div>
+  <div>
+    <input type="submit">
+  </div>
+</form>
+
+

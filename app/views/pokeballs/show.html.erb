@@ -1,0 +1,13 @@
+<h1>Pokeball #<%= @pokeball.id %></h1>
+
+<div>
+  <strong>Trainer</strong>:<br />
+  <p><%= @pokeball.trainer.name %></p>
+</div>
+<div>
+  <strong>Pokemon</strong>:<br />
+  <p><%= @pokeball.character.name %></p>
+</div>
+
+<a href="/pokeballs/<%= @pokeball.id %>/edit">Edit</a> |
+<a href="/pokeballs/<%= @pokeball.id %>/destroy">Destroy</a>

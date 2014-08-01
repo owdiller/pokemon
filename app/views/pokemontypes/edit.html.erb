@@ -1,0 +1,17 @@
+<h1>Editing Pokemontype #<%= @pokemontype.id %></h1>
+
+<form action="/pokemontypes/<%= @pokemontype.id %>/update">
+  <div>
+    <label for="pokemon_id">character_id</label><br />
+    <input id="character_id" name="character_id" value="<%= @pokemontype.character_id  %>" type="text" />
+  </div>
+  <div>
+    <label for="type_id">type_id</label><br />
+    <input id="type_id" name="type_id" value="<%= @pokemontype.type_id  %>" type="text" />
+  </div>
+  <div>
+    <input type="submit">
+  </div>
+</form>
+
+

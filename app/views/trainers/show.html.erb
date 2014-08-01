@@ -1,0 +1,22 @@
+<h1>Trainer #<%= @trainer.id %></h1>
+
+<div>
+  <strong>Name</strong>:<br />
+  <p><%= @trainer.name %></p>
+</div>
+<div>
+  <strong>Image</strong>:<br />
+  <p><img src="<%= @trainer.img %>"></p>
+</div>
+<div>
+  <strong>Trainer</strong>:<br />
+  <p><%= @trainer.trainer_id %></p>
+</div>
+<div>
+  <strong>Pokemons Owned</strong>:<br />
+  <p><%= @pokemons %></p>
+</div>
+
+
+<a href="/trainers/<%= @trainer.id %>/edit">Edit</a> |
+<a href="/trainers/<%= @trainer.id %>/destroy">Destroy</a>

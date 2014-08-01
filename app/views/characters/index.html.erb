@@ -1,0 +1,29 @@
+<h1>Pokemons</h1>
+
+<p><a href="/new_character">Add a New Pokemon</a></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Image</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+  <% @characters.each do |character| %>
+    <tr>
+          <td><%= character.name %></td>
+          <td><img src="<%= character.img %>" height="300px" width="300px"></td>
+          <td><a href="/characters/<%= character.id %>">Show</a>
+        </td>
+      <td><a href="/characters/<%= character.id %>/edit">Edit</a></td>
+      <td><a href="/characters/<%= character.id %>/destroy">Destroy</a></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+

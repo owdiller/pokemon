@@ -1,0 +1,17 @@
+<h1>Editing Character #<%= @character.id %></h1>
+
+<form action="/characters/<%= @character.id %>/update">
+  <div>
+    <label for="name">name</label><br />
+    <input id="name" name="name" value="<%= @character.name  %>" type="text" />
+  </div>
+  <div>
+    <label for="img">img</label><br />
+    <input id="img" name="img" value="<%= @character.img  %>" type="text" />
+  </div>
+  <div>
+    <input type="submit">
+  </div>
+</form>
+
+
